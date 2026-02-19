@@ -1,73 +1,181 @@
-# Welcome to your Lovable project
+Reverse Job Board – Candidate-Centric Hiring Platform
+Project Overview
 
-## Project info
+Reverse Job Board is a futuristic hiring platform where candidates list their skills anonymously, and companies pitch themselves to candidates. This flips traditional job boards by putting candidates in control, encouraging better matches, fairer hiring, and thoughtful company engagement.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Key highlights:
 
-## How can I edit this code?
+Candidate anonymity until a pitch is accepted
 
-There are several ways of editing your application.
+AI-assisted skill matching (optional)
 
-**Use Lovable**
+Company pitch system with tracking and moderation
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Interactive dashboards and notifications
 
-Changes made via Lovable will be committed automatically to this repo.
+Analytics on matches and engagement trends
 
-**Use your preferred IDE**
+This project demonstrates full-stack development, matching algorithms, secure identity handling, moderation tools, and advanced UX design.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Features
+1. Candidate Dashboard
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Register anonymously with a unique username or ID
 
-Follow these steps:
+Build a skills profile:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Technical skills
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Soft skills
 
-# Step 3: Install the necessary dependencies.
-npm i
+Interests and career goals
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Control visibility of skills (public/private/selective)
 
-**Edit a file directly in GitHub**
+View and manage company pitches
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+2. Company Dashboard
 
-**Use GitHub Codespaces**
+Register with verified company account
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Browse candidate skills anonymously
 
-## What technologies are used for this project?
+Pitch candidates with:
 
-This project is built with:
+Role description
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Value proposition
 
-## How can I deploy this project?
+Compensation and perks
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Track pitch status (sent, viewed, accepted, rejected)
 
-## Can I connect a custom domain to my Lovable project?
+3. Matching Algorithm
 
-Yes, you can!
+Suggest candidates to companies based on skill and interest alignment
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Suggest companies to candidates based on desired skill growth and industry
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Relevance ranking and scoring for better matches
+
+4. Notifications & Alerts
+
+In-app notifications for:
+
+New pitches
+
+Pitch acceptance/rejection
+
+System updates
+
+Optional email notifications for critical events
+
+5. Moderation & Safety
+
+Flag inappropriate pitches or spam
+
+Admin dashboard for content moderation and user management
+
+Secure role-based access (Candidate, Company, Admin)
+
+6. UX & Interface
+
+Modern, responsive design for mobile and desktop
+
+Interactive visual cues highlighting skill matches
+
+Simple pitch flow and skill input for users
+
+Tech Stack
+
+Frontend: React, Tailwind CSS (or Material UI)
+
+Backend: Node.js + Express
+
+Database: MongoDB / PostgreSQL
+
+AI Integration: Optional AI-assisted pitch generation and skill suggestion
+
+Notifications: WebSockets or Push notifications
+
+Other: CORS, dotenv for environment variables, secure backend API key handling
+
+Architecture Overview
+Frontend (React)  <--->  Backend (Node.js/Express)  <--->  Database
+       |                            |
+       |-- Candidate Dashboard       |
+       |-- Company Dashboard         |
+       |-- Notifications UI         |
+                                     
+Backend handles:
+- CRUD operations for candidates, companies, and pitches
+- Matching algorithm
+- Moderation and role-based access control
+- AI integration for skill suggestions or pitch summaries
+
+Installation & Setup
+Backend
+
+Clone the repository:
+
+git clone https://github.com/yourusername/reverse-job-board.git
+cd reverse-job-board/server
+
+
+Install dependencies:
+
+npm install
+
+
+Create .env file:
+
+PORT=5000
+AI_API_KEY=your_secure_api_key_here
+
+
+Start backend server:
+
+node server.js
+
+Frontend
+
+Navigate to frontend folder:
+
+cd ../client
+
+
+Install dependencies:
+
+npm install
+
+
+Start frontend:
+
+npm start
+
+
+Open in browser: http://localhost:3000
+
+Usage
+
+Candidates register anonymously and create their skill profiles.
+
+Companies browse skills anonymously and send pitches.
+
+Candidates receive notifications and can accept/reject pitches.
+
+Admins can moderate content and manage users.
+
+Matching algorithm provides recommended connections for both candidates and companies.
+
+Future Enhancements
+
+Multi-project support for companies
+
+Real-time collaboration for distributed hiring teams
+
+AI-driven candidate-company compatibility scoring
+
+Offline mode for candidates to view skills without internet
+
+Integration with LinkedIn, GitHub, or other portfolio platforms
