@@ -3,6 +3,8 @@ Project Overview
 
 Reverse Job Board is a futuristic hiring platform where candidates list their skills anonymously, and companies pitch themselves to candidates. This flips traditional job boards by putting candidates in control, encouraging better matches, fairer hiring, and thoughtful company engagement.
 
+Deployed Project :- https://pitch-perfect-hire.vercel.app/
+
 Key highlights:
 
 Candidate anonymity until a pitch is accepted
